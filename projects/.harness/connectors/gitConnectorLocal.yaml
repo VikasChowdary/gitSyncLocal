@@ -1,0 +1,24 @@
+connector:
+  name: gitConnectorLocal
+  identifier: gitConnectorLocal
+  description:
+  orgIdentifier: default
+  projectIdentifier: testGitSync2
+  type: Github
+  spec:
+    url: https://github.com/VikasChowdary/gitSyncLocal
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: VikasChowdary
+          tokenRef: patForGithub
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: patForGithub
+    delegateSelectors:
+    - acctgroup
+    executeOnDelegate: true
+    type: Repo
