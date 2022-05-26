@@ -1,0 +1,14 @@
+connector:
+  name: dockerTest
+  identifier: dockerTest
+  description:
+  orgIdentifier: default
+  projectIdentifier: testGitSync2
+  type: DockerRegistry
+  spec:
+    dockerRegistryUrl: docker.com
+    providerType: DockerHub
+    auth:
+      type: Anonymous
+    delegateSelectors:
+    - acctgroup
