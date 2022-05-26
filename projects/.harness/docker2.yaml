@@ -1,6 +1,6 @@
 connector:
-  name: dockerTest
-  identifier: dockerTest
+  name: dockerTest1
+  identifier: dockerTest1
   description:
   orgIdentifier: default
   projectIdentifier: testGitSync2
